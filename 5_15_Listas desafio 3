@@ -1,0 +1,26 @@
+def eliminar_duplicados(lista):
+  """Elimina los elementos duplicados de una lista y devuelve una nueva lista sin duplicados.   
+
+
+  Args:
+    lista: La lista de números con posibles duplicados.
+
+  Returns:
+    Una nueva lista con los elementos únicos de la lista original.
+  """
+
+  # Convertir la lista a un conjunto para eliminar automáticamente los duplicados
+  conjunto_sin_duplicados = set(lista)
+
+  # Convertir el conjunto de vuelta a una lista para mantener el orden (opcional)
+  lista_sin_duplicados = list(conjunto_sin_duplicados)
+
+  return lista_sin_duplicados
+
+# Ejemplo de uso:
+lista_original = [1, 2, 3, 2, 1, 4, 5, 4]
+lista_sin_duplicados = eliminar_duplicados(lista_original)
+
+print("Lista original:", lista_original)
+print("Lista sin duplicados:", lista_sin_duplicados)
+  
